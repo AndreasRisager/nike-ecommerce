@@ -1,0 +1,84 @@
+.heroBanner {
+  display: grid;
+  border-bottom: 2px solid #000;
+  &__img {
+    grid-area: 1/1/-1/-1;
+  }
+  &__content {
+    grid-area: 1/1/-1/-1;
+    align-self: flex-end;
+    padding: 1em;
+  }
+  &__brand {
+    font-size: 2em;
+    color: #298FCB;
+  }
+  &__model {
+    font-size: 3em;
+    color: #FFF;
+  }
+}
+.aboutShoes {
+  padding: 1em;
+  border-bottom: 2px solid #000;
+  p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+  }
+}
+.hot {
+  h2 {
+    font-size: 3em;
+    margin: 1em 1em 0 1em;
+  }
+}
+.products {
+  border-bottom: 2px solid #000;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  padding: 3em 1em;
+}
+
+
+.featuredCategory {
+  border-bottom: 2px solid #000;
+  display: flex;
+  height: 700px;
+  overflow: hidden;
+  &__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2em;
+    padding: 2em 4em 3em 2em;
+  }
+  &__img {
+    height: 100%;
+    width: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__brand {
+    font-size: 1.3em;
+  }
+  &__category {
+    margin: 0.3em 0;
+    font-size: 3.1em;
+  }
+  &__text {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+  &__link {
+    font-size: 1.3em;
+    margin: 1em 0;
+  }
+}
+
+
+footer {
+  padding: 8em 0;
+}

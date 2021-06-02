@@ -15,10 +15,24 @@
     "title": {
       "type": "string"
     },
-    "articles": {
+    "products": {
       "via": "categories",
-      "collection": "article",
-      "dominant": true
+      "collection": "products"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
