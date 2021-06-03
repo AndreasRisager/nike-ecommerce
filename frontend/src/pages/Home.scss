@@ -1,29 +1,9 @@
-.heroBanner {
-  display: grid;
-  border-bottom: 2px solid #000;
-  &__img {
-    grid-area: 1/1/-1/-1;
-  }
-  &__content {
-    grid-area: 1/1/-1/-1;
-    align-self: flex-end;
-    padding: 1em;
-  }
-  &__brand {
-    font-size: 2em;
-    color: #298FCB;
-  }
-  &__model {
-    font-size: 3em;
-    color: #FFF;
-  }
-}
+
 .aboutShoes {
-  padding: 1em;
-  border-bottom: 2px solid #000;
+  padding: 1em 1.5em;
   p {
     font-size: 1.5em;
-    line-height: 1.3em;
+    line-height: 1.4em;
   }
 }
 .hot {

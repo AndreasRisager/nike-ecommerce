@@ -1,9 +1,13 @@
 .siteHeader {
   border-bottom: 2px solid #000;
+  position: relative;
   &__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .sneakers:hover > .siteHeader__dropdown {
+      display: flex !important;
+    }
     &List {
       display: flex;
       li {
@@ -11,5 +15,48 @@
         list-style: none;
       }
     }
+  }
+  &__dropdown {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    padding: 1em;
+    display: none;
+    justify-content: space-evenly;
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        list-style: none;
+        padding: 0.3rem;
+        &:first-of-type {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}
+.heroBanner {
+  display: grid;
+  &__img {
+    grid-area: 1/1/-1/-1;
+    padding: 0.5em;
+  }
+  &__content {
+    grid-area: 1/1/-1/-1;
+    align-self: flex-end;
+    padding: 1em;
+  }
+  &__brand {
+    font-size: 2em;
+    color: #298FCB;
+  }
+  &__model {
+    font-size: 3em;
+    color: #FFF;
   }
 }
