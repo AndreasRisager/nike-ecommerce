@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 export default function Product({title, price, brand, img, slug, id}) {
   return (
     <article className="product">
-      <Link to={`/product/${slug}?id=${id}`}>
+      <Link to={`/product/${slug}`}>
         <img src={img} alt={"a pair of " + title} className="product__img" />
       </Link>
       <p className="product__brand">{brand}</p>

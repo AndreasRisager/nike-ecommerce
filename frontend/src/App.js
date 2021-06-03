@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Home path="/" default />
-      <Product path="product/:title" />
+      <Product path="product/:slug" />
     </Router>
   );
 }
